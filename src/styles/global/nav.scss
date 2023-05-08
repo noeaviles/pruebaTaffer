@@ -1,0 +1,209 @@
+.Nav {
+    width: 100%;
+    padding: 10px;
+    background-color: $color-withe;
+    position: fixed;
+    z-index: 100;
+}
+.Nav-menu-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Nav-menuInfo {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.Nav-leng {
+    width: 100px;
+    display: flex;
+    cursor: pointer;
+    i {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+}
+
+.Nav-iMenu {
+    font-size: 31px;
+    cursor: pointer;
+}
+.Nav-logo {
+    width: 30px;
+    height: 50px;
+    background-image: url('../../../public/isotipo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Nav-login {
+    display: flex;
+}
+.Nav-login-btns {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    i {
+        margin-right: 5px;
+    }
+}
+.Nav-login-btns:nth-child(2) {
+   display: none;
+}
+.Nav-desktop {
+    display: none;
+}
+
+.Nav-menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+}
+.isActiveMenu {
+    height: 100vh;
+    padding: 15px;
+    transition: all 0.8s ease-in-out;
+}
+
+.Nav-btn-bookResort {
+    width: 100%;
+    height: 40px;
+}
+.Nav-ul {
+    width: 100%;
+}
+.Nav-li {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #0215c31d;
+    margin-bottom: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+@include breakpoint('medium-high') {
+    .Nav-menu-controls {
+        padding: 10px 30px;
+        align-items: end;
+    }
+    .Nav-logo {
+        width:160px;
+        height: 40px;
+        background-image: url('../../../public/logo.svg');
+        background-position: center;
+    }
+    .Nav-menu {
+        display: flex;
+        align-items: end;
+    }
+    .Nav-iMenu {
+        margin-right: 20px;
+    }
+    .Nav-menuInfo {
+        font-size: 14px;
+        span {
+            font-weight: bold;
+        }
+    }
+    .Nav-login {
+        align-items: end;
+    }
+    .Nav-login-btns {
+        margin-right: 10px;
+    }
+    .Nav-login-btns:nth-child(2) {
+        display: flex;
+        align-items: center;
+     }
+     .Nav-desktop {
+        display: flex;
+    }
+    .Nav-p {
+        font-size: 14px;
+    }
+    .Nav-btn-bookResort {
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+    .Nav-menu-container {
+        flex-direction: row;
+        align-items: center;
+        border-top: 1px solid #0215c31d;
+    }
+    .isActiveMenu {
+        height: 20px;
+        padding-top: 20px;
+        transition: all 0.8s ease-in-out;
+    }
+    .Nav-ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .Nav-li {
+        font-size: 14px;
+        border-bottom: none;
+        margin-bottom: 0px;
+        padding: 0;
+        margin: 0 10px;
+        span {
+            margin-right: 5px;
+        }
+        i {
+            font-size: 12px;
+        }
+    }
+    .Nav-mobile {
+        display: none;
+    }
+}
+@include breakpoint('large') {
+    .Nav-menu-controls {
+        padding: 20px 145px;
+        align-items: center;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .Nav-logo {
+        width:300px;
+        height: 90px;
+    }
+    .Nav-menu,.Nav-login  {
+        height: 90px;
+    }
+    .Nav-iMenu {
+        margin-right: 25px;
+    }
+    .Nav-p,.Nav-menuInfo {
+        font-size: 18px;
+        span {
+            margin-right: 25px;
+        }
+    }
+    .Nav-login-btns {
+        margin-right: 25px;
+        i {
+            font-size: 20px;
+        }
+    }
+    .Nav-btn-bookResort {
+        width: 152px;
+        height: 40px;
+        font-size: 14px;
+        justify-content: center;
+    }
+    .Nav-li {
+        font-size: 18px;
+    }
+}

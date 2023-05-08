@@ -1,0 +1,86 @@
+.Reservation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Reservation-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Reservation-contentInput {
+    display: flex;
+    align-items: center;
+    //justify-content: end;
+    //margin-right: 8px;
+    border-right: 1px solid #0215c31d;
+    padding: 5px;
+    i {
+        font-size: 12px;
+        margin-right: 1px;
+    }
+}
+.Reservation-contentInput:nth-child(4) {
+    border-right: none;
+    margin-right: none;
+}
+.Reservation-contentInput:nth-child(3) {
+    display: none;
+}
+.Reservation-btn {
+    width: 100px;
+}
+.Reservation-btn:nth-child(1) {
+    display: none;
+}
+
+.Reservation-span {
+    font-size: 12px;
+    border-bottom: 1px solid #0215c31d;
+}
+hr {
+
+}
+.Reservation-btn {
+    font-size: 9px;
+}
+select {
+    font-size: 12px;
+    border-bottom: 1px solid #0215c31d;
+}
+@include breakpoint('medium-simple') {
+    .Reservation-contentInput:nth-child(3) {
+        display: flex;
+    }
+    .Reservation-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        
+    }
+    .Reservation-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    .Reservation-radio {
+        width: 40px;
+        height: 22px;
+        background-color: #0215c31d;
+        border-radius: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 2px;
+    }
+    .Reservation-circle {
+        width: 16px;
+        height: 16px;
+        background-color: $color-withe;
+        border-radius: 50%;
+    }
+}

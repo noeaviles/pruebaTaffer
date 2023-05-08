@@ -1,0 +1,67 @@
+.Header {
+    width: 100%;
+    height: 100vh;
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('../../../public/portada.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:calc(30%)
+   
+}
+.Header-fondo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Header-h1 {
+    font-size: 35px;
+    font-family: 'ITC Galliard Pro';
+    font-weight: normal;
+    color: $color-withe;
+    text-align: center;
+}
+.Header-h2 {
+    font-size:14px;
+    color: $color-withe;
+    font-family: 'Lato';
+    font-weight: 200;
+    text-align: center;
+}
+
+@include breakpoint('medium-simple') {
+    .Header-h1 {
+        font-size: 50px;
+    }
+    .Header-h2 {
+        font-size: 18px;
+    }
+
+    }
+
+@include breakpoint('medium-high') {
+    .Header {
+        background-position: center;
+    }
+    .Header-h1 {
+        font-size: 75px;
+    }
+    .Header-h2 {
+        font-size: 24px;
+    }
+}
+
+@include breakpoint('large') {
+    .Header {
+        background-position: center;
+    }
+    .Header-h1 {
+        font-size: 90px;
+    }
+    .Header-h2 {
+        font-size: 30px;
+    }
+}
