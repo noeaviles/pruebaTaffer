@@ -1,10 +1,12 @@
 /*Botones*/
 @mixin btn($color-background,$color-border,$color-font){
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer; 
     color: $color-font;
     background-color: $color-background;
     border: 2px solid $color-border;
-    //width:160px ;
     text-align: center;
     padding: 7px 11px;
     transition: all 0.3s ease;
@@ -28,10 +30,10 @@
 }
 }
 
-.btn-light{
-  @include btn($color-withe,$color-orange,$color-orange);
+.btn-blue{
+  @include btn($color-withe,$color-blue,$color-blue);
 &:hover {
-  @include btn($color-withe,$color-orange,$color-orange);
+  @include btn($color-blue,$color-blue,$color-withe);
 }
 
 }

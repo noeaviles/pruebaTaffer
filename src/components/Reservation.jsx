@@ -9,7 +9,7 @@ const Reservation = () => {
                 <span className="Reservation-span">Check-in</span>
               </div>
               <div className="Reservation-check">
-                <hr />
+                <div>-</div>
               </div>
               <div className="Reservation-check">
                 <span className="Reservation-span">Check-out</span>
@@ -53,7 +53,7 @@ const Reservation = () => {
               </div>
             </div>
             <div className="Reservation-contentInput">
-              <div className="Reservation-btn btn-orange">GET QUOTE</div>
+              <div className="Reservation-btn btn-blue">GET QUOTE</div>
               <div className="Reservation-btn btn-orange">BOOK NOW</div>
             </div>
         </form>
