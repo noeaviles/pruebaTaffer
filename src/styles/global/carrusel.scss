@@ -1,0 +1,154 @@
+.Carrusel {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+}
+.Swiper-contain {
+    
+    .swiper-slide {
+        
+       // padding: 20px;
+        //background-color: aquamarine;
+    }
+}
+.Carrusel-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-blueDark;
+    font-family: 'Lato';
+}
+.Carrusel-h3 {
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+}
+.Carrusel-spanTitle {
+    font-size: 20px;
+    font-weight: lighter;
+    color: $color-blue;
+}
+.Carrusel-controls {
+    display: none;
+}
+.Carrusel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Carrusel-slide {
+    width: 100%;
+    padding: 1rem;
+}
+.Carrusel-img {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img1 {
+    background-image: url('../../../public/gblc.jpg');
+}
+.img2 {
+    background-image: url('../../../public/gbcn.jpg');
+}
+.img3 {
+    background-image: url('../../../public/gbpv.jpg');
+}
+.Carrusel-info {
+    background-color: $color-withe;
+    padding: 10px;
+}
+.Carrusel-slideTitle {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Lato";
+    font-weight: 100;
+    color: $color-blueOpacity;
+    margin-bottom: 10px;
+}
+.Carrusel-p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.Carrusel-a {
+    font-size: 14px;
+    color: $color-blue;
+    text-align: center;
+    text-decoration: underline;
+}
+@include breakpoint('medium') {
+    .Carrusel-slide {
+        padding:0 200px;
+    }
+}
+@include breakpoint('medium-high') {
+    .Carrusel {
+        display: flex;
+    }
+    .Carrusel-title {
+        width: 30%;
+        height: 320px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Carrusel-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-blueOpacity;
+    }
+    .Carrusel-h3 {
+        font-size: 40px; 
+    }
+    .Carrusel-span {
+        margin: 0 10px;
+    }
+    .Carrusel-spanTitle {
+        font-size: 22px;
+    }
+    .Carrusel-container {
+        width: 60%;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-content: end;
+        
+    }
+    .Carrusel-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0px 20px;
+        width: 500px;
+        height: 480px;
+    }
+    .Carrusel-img {
+        width: 100%;
+        height: 350px;
+    }
+    .Carrusel-info {
+        border: 1px solid $color-blueOpacity;
+        position: absolute;
+        bottom: 0px;
+        width: 400px;
+        
+    }
+    .Carrusel-p {
+        margin-bottom: 30px;
+    }
+}
+
+@include breakpoint('large') {
+    .Carrusel-slide {
+        width: 600px;
+    }
+}

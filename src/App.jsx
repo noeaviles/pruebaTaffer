@@ -1,4 +1,6 @@
+import Carrusel from "./components/Carrusel"
 import Header from "./components/Header"
+import ItemsIncludes from "./components/ItemsIncludes"
 import Paragraph from "./components/Paragraph"
 import Reservation from "./components/Reservation"
 
@@ -9,9 +11,8 @@ function App() {
       <Header/>
       <Reservation/>
       <Paragraph/>
-      <Paragraph/>
-      <Paragraph/>
-      <Paragraph/>
+      <Carrusel/>
+      <ItemsIncludes/>
       <Paragraph/>
     </>
   )

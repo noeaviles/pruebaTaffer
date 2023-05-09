@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .Header-h1 {
     font-size: 35px;
@@ -54,14 +55,3 @@
     }
 }
 
-@include breakpoint('large') {
-    .Header {
-        background-position: center;
-    }
-    .Header-h1 {
-        font-size: 90px;
-    }
-    .Header-h2 {
-        font-size: 30px;
-    }
-}

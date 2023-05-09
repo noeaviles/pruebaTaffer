@@ -1,5 +1,11 @@
 .Paragraph {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Paragraph-container {
+    width: 100%;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -25,5 +31,46 @@
     font-size: 16px;
     font-weight: 300;
     text-align: center;
-   
+}
+
+@include breakpoint('medium-tablet') {
+    .Paragraph-container {
+        width: 95%;
+        height: 400px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .Paragraph-title {
+        width: 45%;
+        font-size: 65px;
+        margin: 30px;
+        span {
+            font-size: 75px;
+        }
+    }
+    .Paragraph-p {
+        width: 45%;
+        text-align: left;
+        font-size: 14px;
+    }
+}
+@include breakpoint('large') {
+    .Paragraph {
+        padding: 120px 0;
+    }
+    .Paragraph-container {
+        width: 85%;
+    }
+    .Paragraph-title {
+        font-size: 92px;
+        span {
+            font-size: 117px;
+        }
+    }
+    .Paragraph-p {
+        width: 50%;
+        font-size: 18px;
+    }
 }
