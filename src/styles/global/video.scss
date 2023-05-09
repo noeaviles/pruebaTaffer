@@ -1,0 +1,71 @@
+.Video {
+    display: none;
+}
+@include breakpoint('medium-high') {
+    .Video{
+        display: flex;
+        justify-content: center;
+    }
+    .Video-videoContainer {
+        width: 520px;
+        height: 285px;
+    }
+    .Video-infoContainer {
+        width: 450px;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        i {
+            margin-bottom: 15px;
+        }
+    }
+    .Video-title {
+        width: 100%;
+        color:$color-blueDark;
+        font-weight: lighter;
+        margin-bottom: 40px;
+    }
+    .Video-h4 {
+        font-size: 34px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .Video-subTitle {
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+    .Video-p {
+        font-size: 16px;
+        text-align: center;
+        font-weight: lighter;
+        margin-bottom: 25px;
+    }
+    .Video-yourChoice {
+        font-size: 18;
+        color: $color-blue;
+        margin-bottom: 25px;
+    }
+    .Video-Buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .Video-btn {
+        font-size: 12px;
+    }
+}
+@include breakpoint('large') {
+    .Video-videoContainer {
+        width: 600px;
+        padding: 0 10px;
+    }
+    .Video-infoContainer {
+        width: 500px;
+        height: 330px;
+        justify-content: center;
+        padding: 0 30px;
+    }
+    .Video-p {
+        font-size: 14px;
+    }
+}

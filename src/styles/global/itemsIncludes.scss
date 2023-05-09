@@ -1,62 +1,68 @@
 .Items {
-    width: 100%;
+    display: none;
 }
-.Items-infoContent {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 70px;
-    font-weight: lighter;
-    color:$color-blueDark;
-}
-.Items-title {
-    font-size: 40px;
-}
-.Items-subTitle {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-.Items-p {
-    font-size: 12px;
-}
-.Items-fontStrong {
-    font-weight: 400;
-}
-.Items-Container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.Items-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-    margin-bottom: 50px;
-}
-.Item-Icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    i {
-        font-size: 22px;
+@include breakpoint('medium-high') {
+    .Items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .Items-infoContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        margin-bottom: 12px;
-        color:#717070;
+        margin-bottom: 70px;
+        font-weight: lighter;
+        color:$color-blueDark;
+    }
+    .Items-title {
+        font-size: 40px;
+    }
+    .Items-subTitle {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .Items-p {
+        font-size: 12px;
+    }
+    .Items-fontStrong {
+        font-weight: 400;
+    }
+    .Items-Container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Items-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        margin-bottom: 50px;
+    }
+    .Item-Icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        i {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 12px;
+            color:#717070;
+        }
+    }
+
+    .Item-span {
+        text-align: center;
+        color: $color-blueDark;
+        font-weight: 600;
     }
 }
-
-.Item-span {
-    text-align: center;
-    color: $color-blueDark;
-    font-weight: 600;
-}
-
 @include breakpoint('large') {
     .Items-title {
         font-size: 50px;
