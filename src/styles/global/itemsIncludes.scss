@@ -42,6 +42,8 @@
         align-items: center;
         justify-content: center;
         gap: 70px;
+    }
+    .Items-row:nth-child(1) {
         margin-bottom: 50px;
     }
     .Item-Icon {

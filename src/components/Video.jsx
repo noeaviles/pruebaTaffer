@@ -4,7 +4,7 @@ const Video = () => {
   return (
     <section className="Video">
         <div className="Video-videoContainer">
-            <video src={video} controls autoPlay></video>
+            <video src={video} controls></video>
         </div>
         <div className="Video-infoContainer">
             <div className="Video-title">

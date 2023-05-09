@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
 }
 .Paragraph-container {
     width: 100%;
@@ -13,10 +14,10 @@
 }
 .Paragraph-title {
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-size: 30px;
     text-align:right;
     color: $color-blue;
-    width: 200px;
+    margin-bottom: 10px;
     span {
         font-style: italic;
         font-size: 60px;
@@ -28,7 +29,7 @@
 }
 .Paragraph-p {
     width: 300px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     text-align: center;
 }
@@ -36,7 +37,6 @@
 @include breakpoint('medium-tablet') {
     .Paragraph-container {
         width: 95%;
-        height: 400px;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -45,7 +45,7 @@
     .Paragraph-title {
         width: 45%;
         font-size: 65px;
-        margin: 30px;
+        margin-right: 35px;
         span {
             font-size: 75px;
         }

@@ -1,0 +1,31 @@
+.Divisor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+    hr {
+       display: none;
+    }
+}
+.Divisor-img {
+    width: 25px;
+    img {
+        opacity: 0.2;
+    }
+}
+@include breakpoint('medium-high') {
+    .Divisor {
+        margin: 120px 0;
+        hr {
+            display: flex;
+            width: 420px;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.093);
+        }
+    }
+    .Divisor-img {
+        width: 30px;
+        margin: 0 40px;
+    }
+}

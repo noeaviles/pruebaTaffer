@@ -37,10 +37,10 @@
 }
 
 }
-.btn-yellow{
-  @include btn($color-withe,$color-orange,$color-orange);
+.btn-withe{
+  @include btn($color-dark,$color-withe,$color-withe);
 &:hover {
-  @include btn($color-withe,$color-orange,$color-orange);
+  @include btn($color-withe,$color-withe,$color-dark);
 }
 }
 
