@@ -1,8 +1,7 @@
 import { Swiper, SwiperSlide} from 'swiper/react';
+import { Pagination } from "swiper";
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 const Carrusel = () => {
   
@@ -21,11 +20,25 @@ const Carrusel = () => {
         <Swiper
           spaceBetween={10}
           slidesPerView={1}
-        // modules={[Pagination]}
-          //pagination={{ clickable: true }}
+          modules={[Pagination]}
+          pagination={{ clickable: false }}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
           className='Swiper-contain'
+          breakpoints={{
+            1024: {
+              spaceBetween:-100,
+              slidesPerView:"auto",
+            },
+            1280: {
+              spaceBetween:-150,
+              slidesPerView:"auto",
+            },
+            1500: {
+              spaceBetween:-250,
+              slidesPerView:"auto",
+            }
+          }}
         >
           <SwiperSlide >
             <div className='Carrusel-slide'>

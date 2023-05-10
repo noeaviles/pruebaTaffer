@@ -1,0 +1,74 @@
+.Restaurants {
+    display: none;
+}
+@include breakpoint('medium-high') {
+    .Restaurants {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'lato';
+        font-weight: lighter;
+        margin-bottom: 100px;
+    }
+    .Restaurants-carrusel {
+        width: 100%;
+    }
+    .Restaurants-title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Restaurants-h4 {
+        font-size: 30px;
+        color: $color-blueDark;
+        letter-spacing: 5px;
+        margin-bottom: 4px;
+    }
+    .Restaurants-subTitle {
+        font-size: 18px;
+        color: $color-blueDark;
+        letter-spacing: 4px;
+        margin-bottom: 40px;
+    }
+   
+    .Restaurants-carrusel {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .Restaurants-slide {
+        width: 240px;
+        height:180px;
+        background-color: #f1f4f99d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .Restaurants-logo {
+        width: 200px;
+        height: 60px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 20px;
+    }
+    .Restaurants-p {
+        font-size: 12px;
+        text-align: center;
+        color: $color-blueDark;
+    }
+    
+}
+@include breakpoint('large') {
+    .Restaurants-carrusel {
+        width:90%;
+        margin: 0 0;
+    }
+}

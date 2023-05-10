@@ -1,7 +1,7 @@
 .Items {
     display: none;
 }
-@include breakpoint('medium-high') {
+@include breakpoint('medium-tablet') {
     .Items {
         display: flex;
         flex-direction: column;

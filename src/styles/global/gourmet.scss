@@ -2,8 +2,7 @@
     display: none;
 }
 
-@include breakpoint('medium-high') {
-
+@include breakpoint('medium-tablet') {
     .Gourmet {
         display: flex;
         width: 100%;
@@ -13,6 +12,7 @@
         font-family: 'Lato';
         font-weight: lighter;
         margin-top: 140px;
+        margin-bottom: 50px;
     }
     .Gourmet-container {
         display: flex;
