@@ -1,5 +1,6 @@
 import Carrusel from "./components/Carrusel"
 import Divisor from "./components/Divisor"
+import ExploreMore from "./components/ExploreMore"
 import Footer from "./components/Footer"
 import Gourmet from "./components/Gourmet"
 import Header from "./components/Header"
@@ -20,6 +21,7 @@ function App() {
       <Paragraph/>
       <Divisor/>
       <Carrusel/>
+      <ExploreMore/>
       <Divisor/>
       <ItemsIncludes/>
       <Divisor/>

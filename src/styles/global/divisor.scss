@@ -1,17 +1,22 @@
 .Divisor {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px 0;
-    hr {
-       display: none;
-    }
+    display: none;
 }
-.Divisor-img {
-    width: 25px;
-    img {
-        opacity: 0.2;
+@include breakpoint('medium-tablet') {
+    .Divisor {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 60px 0;
+        hr {
+           display: none;
+        }
+    }
+    .Divisor-img {
+        width: 25px;
+        img {
+            opacity: 0.2;
+        }
     }
 }
 @include breakpoint('medium-high') {
