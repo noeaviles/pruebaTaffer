@@ -11,7 +11,7 @@ const Testimonials = () => {
         <Swiper 
         pagination={{ clickable: true }} 
         modules={[Pagination]} 
-        className=''
+        className='Swiper-contain'
         >
             <SwiperSlide >
               <div className='Testimonials-slide'>

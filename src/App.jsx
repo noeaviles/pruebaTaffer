@@ -7,6 +7,8 @@ import Footer from "./components/Footer"
 import Gourmet from "./components/Gourmet"
 import Header from "./components/Header"
 import ItemsIncludes from "./components/ItemsIncludes"
+import Maps from "./components/Maps"
+import Modal from "./components/Modal"
 import Paragraph from "./components/Paragraph"
 import Reservation from "./components/Reservation"
 import Restaurants from "./components/Restaurants"
@@ -17,10 +19,16 @@ import { useState } from "react"
 
 function App() {
   const [hidden,setHidden] = useState(false);
+  const [modalActive,setModalActive] = useState( false)
 
   const handleHiddenCalculator = () => {
     setHidden(!hidden)
   }
+
+  
+  const handleModal = () => {
+    setModalActive(!modalActive)
+}
 
   return (
     <>
@@ -34,13 +42,15 @@ function App() {
       <Divisor/>
       <ItemsIncludes/>
       <Divisor/>
-      <Video/>
+      <Video handleModal={ handleModal }/>
       <Gourmet/>
       <Restaurants/>
       <Testimonials/>
+      <Maps/>
       <Subscribe/>
       <Footer/>
       <Cookie/>
+      <Modal modalActive={modalActive} handleModal={ handleModal }/>
     </>
   )
 }

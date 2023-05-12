@@ -5,7 +5,8 @@ import logo1 from '../assets/blancablue.svg';
 import logo2 from '../assets/bocados.svg';
 import logo3 from '../assets/hiroshi.svg';
 import logo4 from '../assets/dao.svg';
-
+import { Pagination } from 'swiper';
+import 'swiper/css/pagination';
 
 const Restaurants = () => {
   return (
@@ -21,6 +22,8 @@ const Restaurants = () => {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             className='Swiper-contain'
+            pagination={{ clickable: true }} 
+            modules={[Pagination]} 
           >
             <SwiperSlide >
               <div className='Restaurants-slide'>

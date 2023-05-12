@@ -9,6 +9,18 @@
     .Video-videoContainer {
         width: 520px;
         height: 285px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        i {
+            color: $color-withe;
+            font-size: 50px;
+            cursor: pointer;
+        }
     }
     .Video-infoContainer {
         width: 450px;
