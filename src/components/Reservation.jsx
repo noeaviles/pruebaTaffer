@@ -1,5 +1,6 @@
 
-const Reservation = () => {
+const Reservation = ( { handleHiddenCalculator } ) => {
+  
   return (
     <section className="Reservation">
         <form action="" className="Reservation-form">
@@ -53,7 +54,7 @@ const Reservation = () => {
               </div>
             </div>
             <div className="Reservation-contentInput">
-              <div className="Reservation-btn btn-blue">GET QUOTE</div>
+              <div className="Reservation-btn btn-blue" onClick={handleHiddenCalculator}>RESORT CREDIT</div>
               <div className="Reservation-btn btn-orange">BOOK NOW</div>
             </div>
         </form>

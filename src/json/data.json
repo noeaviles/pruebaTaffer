@@ -1,0 +1,108 @@
+{
+  "en": {
+    "1": {
+      "hotel": "Hotel",
+      "code": "demo_hotel",
+      "rooms": [
+        {
+          "name": "Demo room 1",
+          "resort_credits": "false",
+          "resort_credits_nights": {
+            "3": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0",
+            "7": "0",
+            "8": "0",
+            "9": "0",
+            "10": "0"
+          }
+        },
+        {
+          "name": "Demo room 2",
+          "resort_credits": "false",
+          "resort_credits_nights": {
+            "3": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0",
+            "7": "0",
+            "8": "0",
+            "9": "0",
+            "10": "0"
+          }
+        },
+        {
+          "name": "Demo room 3",
+          "resort_credits": "true",
+          "resort_credits_nights": {
+            "3": "350",
+            "4": "400",
+            "5": "560",
+            "6": "670",
+            "7": "750",
+            "8": "800",
+            "9": "900",
+            "10": "1000"
+          }
+        },
+        {
+          "name": "Demo room 4",
+          "resort_credits": "true",
+          "resort_credits_nights": {
+            "3": "370",
+            "4": "480",
+            "5": "600",
+            "6": "720",
+            "7": "840",
+            "8": "960",
+            "9": "1080",
+            "10": "1200"
+          }
+        },
+        {
+          "name": "Demo room 5",
+          "resort_credits": "false",
+          "resort_credits_nights": {
+            "3": "0",
+            "4": "0",
+            "5": "0",
+            "6": "0",
+            "7": "0",
+            "8": "0",
+            "9": "0",
+            "10": "0"
+          }
+        },
+        {
+          "name": "Demo room 6",
+          "resort_credits": "false",
+          "resort_credits_nights": {
+            "3": "360",
+            "4": "480",
+            "5": "600",
+            "6": "720",
+            "7": "840",
+            "8": "960",
+            "9": "1080",
+            "10": "1200"
+          }
+        },
+        {
+          "name": "Demo room 7",
+          "resort_credits": "true",
+          "resort_credits_nights": {
+            "3": "390",
+            "4": "520",
+            "5": "650",
+            "6": "780",
+            "7": "910",
+            "8": "1040",
+            "9": "1170",
+            "10": "1300"
+          }
+        }
+      ]
+    }
+  }
+}

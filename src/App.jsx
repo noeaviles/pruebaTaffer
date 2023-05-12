@@ -1,3 +1,4 @@
+import Calculadora from "./components/Calculadora"
 import Carrusel from "./components/Carrusel"
 import Cookie from "./components/Cookie"
 import Divisor from "./components/Divisor"
@@ -12,13 +13,20 @@ import Restaurants from "./components/Restaurants"
 import Subscribe from "./components/Subscribe"
 import Testimonials from "./components/Testimonials"
 import Video from "./components/Video"
+import { useState } from "react"
 
 function App() {
+  const [hidden,setHidden] = useState(false);
+
+  const handleHiddenCalculator = () => {
+    setHidden(!hidden)
+  }
 
   return (
     <>
       <Header/>
-      <Reservation/>
+      <Reservation handleHiddenCalculator={ handleHiddenCalculator }/>
+      <Calculadora hidden={hidden}/>
       <Paragraph/>
       <Divisor/>
       <Carrusel/>
