@@ -1,4 +1,5 @@
 import Carrusel from "./components/Carrusel"
+import Cookie from "./components/Cookie"
 import Divisor from "./components/Divisor"
 import ExploreMore from "./components/ExploreMore"
 import Footer from "./components/Footer"
@@ -31,6 +32,7 @@ function App() {
       <Testimonials/>
       <Subscribe/>
       <Footer/>
+      <Cookie/>
     </>
   )
 }
