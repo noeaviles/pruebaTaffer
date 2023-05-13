@@ -2,6 +2,10 @@ import { Swiper, SwiperSlide} from 'swiper/react';
 import { Pagination } from "swiper";
 import 'swiper/css';
 import 'swiper/css/pagination';
+import img1 from '../assets/gblc.jpg';
+import img2 from '../assets/gbcn.jpg';
+import img3 from '../assets/gbpv.jpg';
+
 
 const Carrusel = () => {
   
@@ -42,7 +46,7 @@ const Carrusel = () => {
         >
           <SwiperSlide >
             <div className='Carrusel-slide'>
-              <div className='Carrusel-img img1'></div>
+              <div className='Carrusel-img img1' style={{ backgroundImage: `url(${img1})`}}></div>
               <div className='Carrusel-info'>
                 <p className='Carrusel-slideTitle'>LOS CABOS</p>
                 <p className='Carrusel-p'>The ultimate luxury escape, Garza Blanca Resort & Spa Los Cabos is a family-friendly beach resort with a contemporary design inspired by the natural landscape.</p>
@@ -52,7 +56,7 @@ const Carrusel = () => {
           </SwiperSlide>
           <SwiperSlide >
             <div className='Carrusel-slide'>
-              <div className='Carrusel-img img2'></div>
+              <div className='Carrusel-img img2' style={{ backgroundImage: `url(${img2})`}}></div>
               <div className='Carrusel-info'>
                 <p className='Carrusel-slideTitle'>GARZA BLANCA CANCUN</p>
                 <p className='Carrusel-p'>The newest, hottest, and most luxurious yet addition to TAFER Hotels & Resorts collection of sophisticated all-inclusive resorts in Mexico’s stunning beaches.</p>
@@ -62,7 +66,7 @@ const Carrusel = () => {
           </SwiperSlide>
           <SwiperSlide >
             <div className='Carrusel-slide'>
-              <div className='Carrusel-img img3'></div>
+              <div className='Carrusel-img img3' style={{ backgroundImage: `url(${img3})`}}></div>
               <div className='Carrusel-info'>
                 <p className='Carrusel-slideTitle'>GARZA BLANCA VALLARTA</p>
                 <p className='Carrusel-p'>The ultimate luxury escape, Garza Blanca Resort & Spa Los Cabos is a family-friendly beach resort with a contemporary design inspired by the natural landscape.</p>

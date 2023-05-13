@@ -37,6 +37,9 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+.Nav-logo-desktop {
+    display: none;
+}
 .Nav-login {
     display: flex;
 }
@@ -94,10 +97,15 @@
         align-items: end;
     }
     .Nav-logo {
-        width:160px;
+       display: none;
+    }
+    .Nav-logo-desktop {
+        display: flex;
+        width:260px;
         height: 40px;
-        background-image: url('../../../public/logo.svg');
         background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .Nav-menu {
         display: flex;
@@ -175,7 +183,7 @@
         height: 100px;
         margin-bottom: 20px;
     }
-    .Nav-logo {
+    .Nav-logo-desktop {
         width:250px;
         height: 80px;
     }

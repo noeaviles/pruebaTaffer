@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
     --opacidad-negro: 0.5;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url('../../../public/portada.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro)));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

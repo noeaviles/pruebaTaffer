@@ -1,4 +1,6 @@
 import { useState } from "react"
+import logoDesktop from '../assets/logo.svg';
+import isotipo from '../assets/isotipo.png';
 
 const Nav = () => {
     const [menu,setMenu] = useState(false);
@@ -21,7 +23,8 @@ const Nav = () => {
                 </div>
             </div>
 
-            <div className="Nav-logo" />
+            <div className="Nav-logo" style={{ backgroundImage: `url(${isotipo})`}}/>
+            <div className="Nav-logo-desktop" style={{ backgroundImage: `url(${logoDesktop})`}}/>
 
             <div className="Nav-login">
                 <div className="Nav-login-btns">

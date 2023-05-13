@@ -2,13 +2,14 @@ import { useEffect } from "react";
 import Nav from "./Nav"
 import Rellax from "rellax";
 import logos from '../assets/LogosAdwards.png'
+import portada from '../assets/portada.jpg'
 const Header = () => {
   useEffect(() => {
     new Rellax(".animate");
   }, [])
   
   return (
-    <header className="Header">
+    <header className="Header" style={{ backgroundImage: `url(${portada})`}}>
       <Nav/>
       <div className="Header-fondo " >
         <h1 className="Header-h1 animate" data-rellax-zindex="2">Garza Blanca Resorts</h1>
